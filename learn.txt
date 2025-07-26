@@ -1,0 +1,11 @@
+1. Saya ingin membuat website masjid dengan nama masjidnya adalah "Masjid Ibnu Sabil"
+2. Masjid ini alamatnya di Pisangan Baru, Matraman, Jakarta Timur, DKI Jakarta
+3. Website masjid ini memiliki fitur 
+    - Info Jam Sholat wilayah Jakarta Timur secara realtime
+    - Info Keuangan Masjid
+    - Content Management System
+    - Dan lain-lain
+    
+4. Website ini menggunakan Laravel + Vue V3 Composition API + Inertia yang menerapkan Single Page Aplication
+5. Website ini menggunakan database dari mysql
+6. Untuk CSS yang digunakan adalah Tailwind JS
