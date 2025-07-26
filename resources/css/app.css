@@ -1,0 +1,77 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Font Awesome */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Masjid Ibnu Sabil */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-islamic-green-600 hover:bg-islamic-green-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 border border-white/30 hover:border-white/50;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-islamic-green-600 text-islamic-green-600 hover:bg-islamic-green-600 hover:text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 dark:border-islamic-green-400 dark:text-islamic-green-400 dark:hover:bg-islamic-green-400 dark:hover:text-islamic-green-900;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 border border-gray-100 dark:border-gray-700;
+  }
+  
+  .prayer-time-card {
+    @apply bg-gradient-to-br from-islamic-green-500 to-islamic-green-700 text-white rounded-2xl p-6 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-105 relative overflow-hidden;
+  }
+  
+  .prayer-time-card::before {
+    content: '';
+    @apply absolute inset-0 bg-islamic-pattern opacity-20;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 text-center;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-gray-600 dark:text-gray-300 text-center max-w-3xl mx-auto mb-16;
+  }
+  
+  .feature-icon {
+    @apply w-16 h-16 mx-auto mb-6 p-4 bg-islamic-green-100 dark:bg-islamic-green-900 rounded-2xl text-islamic-green-600 dark:text-islamic-green-400 transition-all duration-300 group-hover:scale-110;
+  }
+  
+  .nav-link {
+    @apply text-gray-700 dark:text-gray-300 hover:text-islamic-green-600 dark:hover:text-islamic-green-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-islamic-green-50 dark:hover:bg-islamic-green-900/20;
+  }
+  
+  .mobile-menu {
+    @apply fixed inset-0 bg-white dark:bg-gray-900 z-50 transform transition-transform duration-300 ease-in-out;
+  }
+  
+  .hero-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(34, 197, 94, 0.1) 0%, transparent 50%);
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-gray-700/50;
+  }
+}
